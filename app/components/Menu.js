@@ -27,34 +27,34 @@ export const Menu = () => {
         onClick={doToggleMenu}
       ></div>
       <div
-        className={`w-1/4 transition-all duration-500 ease-out fixed flex z-50 flex-col gap-2 right-0`}
+        className={`w-1/4 transition-all duration-500 ease-out fixed flex z-50 flex-col gap-2 right-0 bg-[#181818]`}
         style={{
           transform: menuOpen ? `translateX(0%)` : `translateX(100%)`,
         }}
       >
         <div
-          className="p-4 bg-[#181818] border border-[#333333] mx-6 rounded-lg hover:bg-[#202020] hover:cursor-pointer transition-all duration-[10ms] ease-in flex items-center gap-2"
+          className="p-4 bg-[#181818] border border-[#333333] mx-6 ml-0 mb-0 rounded-lg hover:bg-[#202020] hover:cursor-pointer transition-all duration-[10ms] ease-in flex items-center gap-2"
           onClick={() => doChangePage("dashboard")}
         >
           <RxDashboard />
           Dashboard
         </div>
         <div
-          className="p-4 bg-[#181818] border border-[#333333] mx-6 rounded-lg hover:bg-[#202020] hover:cursor-pointer transition-all duration-[10ms] ease-in flex items-center gap-2"
+          className="p-4 bg-[#181818] border border-[#333333] mx-6 ml-0 mb-0 rounded-lg hover:bg-[#202020] hover:cursor-pointer transition-all duration-[10ms] ease-in flex items-center gap-2"
           onClick={() => doChangePage("journal")}
         >
           <IoJournal />
           Journal
         </div>
         <div
-          className="p-4 bg-[#181818] border border-[#333333] mx-6 rounded-lg hover:bg-[#202020] hover:cursor-pointer transition-all duration-[10ms] ease-in flex items-center gap-2"
+          className="p-4 bg-[#181818] border border-[#333333] mx-6 ml-0 mb-0 rounded-lg hover:bg-[#202020] hover:cursor-pointer transition-all duration-[10ms] ease-in flex items-center gap-2"
           onClick={() => doChangePage("analytics")}
         >
           <IoStatsChartSharp />
           Analytics
         </div>
         <div
-          className="p-4 bg-[#181818] border border-[#333333] mx-6 rounded-lg hover:bg-[#202020] hover:cursor-pointer transition-all duration-[10ms] ease-in flex items-center gap-2"
+          className="p-4 bg-[#181818] border border-[#333333] mx-6 ml-0 mb-0 rounded-lg hover:bg-[#202020] hover:cursor-pointer transition-all duration-[10ms] ease-in flex items-center gap-2"
           onClick={() => doChangePage("settings")}
         >
           <IoIosSettings />

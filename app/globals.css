@@ -25,12 +25,12 @@ body {
 }
 
 .page {
-  @apply absolute m-0 h-full w-full p-6 grow top-0 left-0 transition-all duration-700 ease-out my-4 bg-[#181818];
+  @apply absolute m-0 h-full w-full p-12 grow top-0 left-0 transition-all duration-[20ms] ease-out bg-[#181818];
   opacity: 0%;
 }
 
 h1 {
-  @apply block border-b w-full text-3xl font-bold py-4 border-[#515151];
+  @apply block w-full text-3xl font-semibold py-2 border-[#515151] mb-6;
 }
 
 .page.show {
@@ -39,5 +39,9 @@ h1 {
 }
 
 p {
-  @apply my-6
+  @apply my-8
+}
+
+.rate-your-day-button {
+  @apply w-full border border-[#444444] rounded-xl p-4 flex items-center justify-center hover:bg-[#202020] transition-all duration-75 hover:cursor-pointer;
 }

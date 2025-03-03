@@ -11,6 +11,7 @@ export const Settings = () => {
   return (
     <div className={`page ${currentPage === "settings" ? "show" : ""}`}>
       <h1>Settings</h1>
+      
     </div>
   );
 };

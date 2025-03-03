@@ -32,7 +32,7 @@ export default function TitleBar() {
   return (
     <div
       ref={titleBar}
-      className="title-bar fixed top-0 w-full bg-[#181818] text-[#EFEFEF] flex items-center justify-between select-none p-4 px-6"
+      className="title-bar fixed top-0 w-full bg-[#181818] text-[#EFEFEF] flex items-center justify-between select-none p-8 px-12"
       style={{
         WebkitAppRegion: "drag",
       }}
