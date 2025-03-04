@@ -1,10 +1,7 @@
 "use client";
 
 import useStore from "../store";
-import { RxDashboard } from "react-icons/rx";
-import { IoJournal } from "react-icons/io5";
-import { IoStatsChartSharp } from "react-icons/io5";
-import { IoIosSettings } from "react-icons/io";
+import Icons from "./ui/Icons";
 
 export const Menu = () => {
   const menuOpen = useStore((state) => state.menuOpen);
@@ -36,28 +33,28 @@ export const Menu = () => {
           className="p-4 bg-[#181818] border border-[#333333] mx-6 ml-0 mb-0 rounded-lg hover:bg-[#202020] hover:cursor-pointer transition-all duration-[10ms] ease-in flex items-center gap-2"
           onClick={() => doChangePage("dashboard")}
         >
-          <RxDashboard />
+          <Icons.Dashboard />
           Dashboard
         </div>
         <div
           className="p-4 bg-[#181818] border border-[#333333] mx-6 ml-0 mb-0 rounded-lg hover:bg-[#202020] hover:cursor-pointer transition-all duration-[10ms] ease-in flex items-center gap-2"
           onClick={() => doChangePage("journal")}
         >
-          <IoJournal />
+          <Icons.Journal />
           Journal
         </div>
         <div
           className="p-4 bg-[#181818] border border-[#333333] mx-6 ml-0 mb-0 rounded-lg hover:bg-[#202020] hover:cursor-pointer transition-all duration-[10ms] ease-in flex items-center gap-2"
           onClick={() => doChangePage("analytics")}
         >
-          <IoStatsChartSharp />
+          <Icons.Analytics />
           Analytics
         </div>
         <div
           className="p-4 bg-[#181818] border border-[#333333] mx-6 ml-0 mb-0 rounded-lg hover:bg-[#202020] hover:cursor-pointer transition-all duration-[10ms] ease-in flex items-center gap-2"
           onClick={() => doChangePage("settings")}
         >
-          <IoIosSettings />
+          <Icons.Settings />
           Settings
         </div>
       </div>
